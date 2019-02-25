@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>324</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*Person*
+--
+name
+firstName
+lastName
+birthDate
+--
+printPersonalInformation()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>477</y>
+      <w>198</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>*Student*
+--
+matriculationNumber
+minorSubject
+majorSubject
+--
+printPersonalInformation()
+learn()
+joinCourse()
+dropCourse()
+seeCourses()
+seeCourseDetails()
+updateProfile()
+addComment()
+like()
+requestFriendship()
+respondFriendshipRequest()
+postUpdate()
+viewCourseAnnoncement()
+--
+receiveFriendshipNotification()
+receiveUpdateNotification()
+postAutomaticUpdates()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>369</y>
+      <w>90</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>*Lecturer*
+--
+prepare()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>414</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;140.0;30.0;10.0;30.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>306</y>
+      <w>252</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>260.0;130.0;260.0;150.0;130.0;150.0;130.0;10.0;10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>369</x>
+      <y>837</y>
+      <w>90</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>*Profile*
+--
+picture
+username
+setting
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>513</y>
+      <w>135</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*Course*
+--
+schedule
+location
+--
+addAnnouncement()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>936</x>
+      <y>648</y>
+      <w>162</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Update
+--
+-text: String
+--
++printInteraction():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>729</x>
+      <y>828</y>
+      <w>90</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>*Notification*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>594</x>
+      <y>0</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*Application*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>414</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*Calendar*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>243</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*CourseController*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>243</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*ViewController*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1026</x>
+      <y>243</y>
+      <w>135</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*InteractionController*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>81</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*Controller*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>594</x>
+      <y>81</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*View*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>306</x>
+      <y>81</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*Model*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>18</y>
+      <w>342</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;360.0;40.0;360.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>18</y>
+      <w>315</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>330.0;10.0;330.0;40.0;10.0;40.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>18</y>
+      <w>27</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>99</y>
+      <w>189</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;190.0;60.0;10.0;60.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>936</x>
+      <y>99</y>
+      <w>171</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;170.0;60.0;170.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>936</x>
+      <y>99</y>
+      <w>27</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>783</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1215</x>
+      <y>450</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>/Interaction/
+--
++initiator:Person
+--
+/+printInteraction():void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1098</x>
+      <y>648</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Comment
+--
+-text: String
+--
++printInteraction():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1287</x>
+      <y>648</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Like
+--
+
+--
++printInteraction():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1179</x>
+      <y>513</y>
+      <w>135</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;130.0;110.0;10.0;110.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1287</x>
+      <y>513</y>
+      <w>117</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;110.0;110.0;110.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>36</x>
+      <y>432</y>
+      <w>27</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>126</x>
+      <y>558</y>
+      <w>225</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..30
+m2=1..*
+&lt; attends/has course list
+</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1368</x>
+      <y>243</y>
+      <w>180</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>*NotificationController*
+--
+sendFriendshipNotification()
+sendUpdateNotification()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>936</x>
+      <y>99</y>
+      <w>522</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;560.0;60.0;560.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>999</x>
+      <y>783</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>AutomaticUpdate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>711</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;80.0;60.0;80.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>351</x>
+      <y>963</y>
+      <w>126</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Timeline
+--
+notificationSettings
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>909</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>441</y>
+      <w>180</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1..*
+m2=1..*
+his friends with &gt;</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;20.0;180.0;20.0;180.0;210.0;80.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>774</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>*Annoncement*
+--
+text</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>684</y>
+      <w>135</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>*CourseBoard*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>54</x>
+      <y>729</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>45</x>
+      <y>603</y>
+      <w>27</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>243</y>
+      <w>135</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*FriendShipController*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>936</x>
+      <y>99</y>
+      <w>351</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;370.0;60.0;370.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>477</y>
+      <w>765</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;600.0;490.0;600.0;490.0;10.0;830.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>513</y>
+      <w>351</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>370.0;10.0;370.0;110.0;10.0;110.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>837</y>
+      <w>279</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;190.0;170.0;190.0;10.0;290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>918</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>*FriendNotification*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>783</x>
+      <y>918</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>*UpdateNotification*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>864</y>
+      <w>81</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;70.0;40.0;70.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>864</y>
+      <w>90</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;80.0;40.0;10.0;40.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>126</x>
+      <y>378</y>
+      <w>162</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=0..2
+&lt; teaches </panel_attributes>
+    <additional_attributes>10.0;180.0;60.0;180.0;60.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+</diagram>
